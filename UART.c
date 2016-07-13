@@ -36,9 +36,9 @@ int main(void)
 	UCSRC = (1<<URSEL)|(1<<UCSZ0)|(1<<UCSZ1);
 	DDRB = 0x1;
 	while(1)
-    {
-        // Transmit 'A' every 200ms
+	{
+		// Transmit 'A' every 200ms
 		transmit('A');
 		_delay_ms(200);
-    }
+	}
 }
